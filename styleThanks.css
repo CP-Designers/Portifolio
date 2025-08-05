@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 header {
     display: flex;
     align-items: center;
@@ -51,6 +57,7 @@ header ul a:hover {
 main {
     width: 80%;
     display: flex;
+    flex: 1;
     flex-direction: column;
     align-items: center;
     margin: auto;
@@ -134,4 +141,34 @@ footer p {
     font-size: 20px;
     font-weight: 300;
     color: white;
+}
+
+
+@media (max-width: 768px) {
+    main #title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 0;
+    }
+
+    main h1 {
+        font-size: 54px;
+    }
+
+    main #thanks {
+        font-size: 40px;
+    }
+
+    main #respond {
+        margin-top: 20px;
+        font-size: 34px;
+        text-align: center;
+    }
+
+    footer p {
+        margin-top: 12px;
+        font-size: 18px;
+    }
 }
