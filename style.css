@@ -959,8 +959,8 @@ footer p {
     }
 
     .elements .plate {
-        top: 40px;
-        right: 7%;
+        top: 50px;
+        right: 5%;
         width: 180px;
     }
 
@@ -969,7 +969,7 @@ footer p {
     }
 
     .elements .card {
-        bottom: 70px;
+        bottom: 80px;
         left: 10%;
         width: 150px;
         transform: rotate(-10deg);
