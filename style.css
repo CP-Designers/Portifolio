@@ -10,7 +10,7 @@ html {
 }
 
 body {
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -823,9 +823,6 @@ footer p {
         align-items: center;
         justify-content: center;
         width: 100vw;
-
-        border: 2px solid black;
-
     }
 
     header img {
@@ -836,11 +833,15 @@ footer p {
         display: none;
     }
 
+    main {
+        width: 100%;
+    }
+
     /* START */
     #start-section {
         font-size: 30px;
         font-weight: 300;
-        
+
     }
 
     #start-section #names {
@@ -854,8 +855,6 @@ footer p {
 
     /* ABOUTE WE */
     #about-we {
-        text-align: left;
-        justify-content: baseline;
         align-self: flex-start;
     }
 
@@ -873,7 +872,7 @@ footer p {
 
     #about-we #photos img {
         width: 200px;
-        height: 300px;
+        height: 280px;
         border-radius: 10px;
     }
 
@@ -901,6 +900,8 @@ footer p {
         flex-direction: column;
         gap: 60px;
         margin-top: 85px;
+        
+        border: 1px solid black;
     }
 
     #about-we #texts .who {
@@ -925,7 +926,7 @@ footer p {
     }
 
     #about-we #texts .what {
-        align-self: flex-end;
+        align-self: end;
 
         width: 240px;
         height: 85px;
@@ -952,6 +953,8 @@ footer p {
         height: 500px;
 
         margin-top: 230px;
+
+        border: 1px solid black;
     }
 
     .elements .decor {
@@ -961,7 +964,7 @@ footer p {
 
     .elements .plate {
         top: 40px;
-        right: 5%;
+        right: 6%;
         width: 180px;
     }
 
@@ -989,9 +992,8 @@ footer p {
         display: flex;
         flex-direction: column;
         margin: auto;
+        margin-top: 230px;
         gap: 65px;
-
-        border: 1px solid black;
 
     }
 
@@ -1114,8 +1116,8 @@ footer p {
     }
 
     #projects .camisas .slide-camisas {
-        width: 400px;
-        height: 430px;
+        width: 390px;
+        height: 420px;
 
         border-radius: 30px;
     }
@@ -1152,7 +1154,7 @@ footer p {
         height: 380px;
         margin: auto;
         margin-top: 230px;
-        
+
     }
 
     #shirt .shirt-image {
