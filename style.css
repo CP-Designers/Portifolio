@@ -18,6 +18,7 @@ body {
 header {
     display: flex;
     align-items: center;
+    justify-content: center;
     padding: 10px;
     position: sticky;
     top: 0;
@@ -29,8 +30,7 @@ header {
 }
 
 header img {
-    width: 75px;
-    margin-left: 225px;
+    width: 60px;
 }
 
 header ul {
@@ -781,13 +781,18 @@ textarea::placeholder {
 /* FOOTER */
 footer {
     background: #6640EE;
-    height: 150px;
+    
     text-align: center;
-    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
 }
 
-footer #insta {
-    margin-left: 20px;
+footer .icons {
+    display: flex;
+    gap: 15px;
 }
 
 footer a {
@@ -796,7 +801,7 @@ footer a {
 
 footer img {
     width: 32px;
-    margin-top: 10px;
+    /* margin-top: 10px; */
     transition: all 300ms ease;
 }
 
@@ -1199,16 +1204,15 @@ footer p {
 
     /* FOOTER */
     footer {
-        padding: 25px;
+        gap: 8px;
     }
 
-    footer #insta {
-        margin-left: 15px;
+    footer .icons {
+        gap: 15px;
     }
 
     footer img {
         width: 30px;
-        margin-top: 8px;
     }
 
     footer p {
