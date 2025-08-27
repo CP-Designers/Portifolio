@@ -35,7 +35,7 @@
     <header>
         <img src="images/mark/LOGO.png" alt="LOGO - CP Designers">
         <ul>
-            <li><a href="#start-section" id="start">Inicio</a></li>
+            <li><a href="#start-section" class="start" id="start">Inicio</a></li>
             <li><a href="#about-we" id="about">Sobre Nós</a></li>
             <li><a href="#projects" id="project">Projetos</a></li>
             <li><a href="#contact-section" id="contact">Contato</a></li>
@@ -54,27 +54,27 @@
             <p id="info">Designers Gráfico | Criatividade em Dobro </p>
         </section>
 
-        <section id="about-we">
+        <section class="show" id="about-we">
 
-            <h1 id="about">Sobre Nós</h1>
+            <h1 class="todo-title">Sobre Nós</h1>
 
             <div id="photos">
-                <div class="photo-charllys">
+                <div class="photo-charllys todo-charllys">
                     <img src="images/Images profile/Profile-Charllys.jpeg" alt="Foto Charllys">
                     <p>Eu sou Charllys Victor</p>
                 </div>
-                <div class="photo-pedro">
+                <div class="photo-pedro todo-pedro">
                     <img src="images/Images profile/Profile-Pedro.png" alt="Foto Pedro">
                     <p>Eu sou Pedro Henrique</p>
                 </div>
             </div>
 
             <div id="texts">
-                <div class="who">
+                <div class="who todo-charllys">
                     <h1>Quem somos?</h1>
                     <p>Nós somos uma dupla apaixonada por design</p>
                 </div>
-                <div class="what">
+                <div class="what todo-pedro">
                     <h1>O que fazemos?</h1>
                     <p>Transformamos ideias em visuais impactantes</p>
                 </div>
@@ -83,29 +83,29 @@
         </section>
 
 
-        <section class="elements">
+        <section class="elements show">
             <picture>
                 <source media="(max-width: 786px)" srcset="images/Elements/Vector Mobile.png">
-                <img src="images/Elements/Vector Desktop.png" alt="Linha roxa" class="line">
+                <img src="images/Elements/Vector Desktop.png" alt="Linha roxa" class="line todo">
             </picture>
 
-            <div class="decor plate">
+            <div class="decor plate todo">
                 <img src="images/mark/Placa 2.png" alt="Placa fachada de loja">
             </div>
 
-            <div class="decor card">
+            <div class="decor card todo">
                 <img src="images/mark/Cartão-de-visita---FRENTE.png" alt="Cartão de Visita">
             </div>
 
         </section>
 
 
-        <section id="projects">
+        <section class="show" id="projects">
 
-            <h1>Projetos</h1>
+            <h1 class="todo-title">Projetos</h1>
 
-            <div class="flyers project-item">
-                <h1 id="art">Flyers</h1>
+            <div class="flyers project-item todo-slider">
+                <h1 class="title-projects">Flyers</h1>
                 <div class="slide-flyers">
                     <div class="slider-flyers">
                         <div class="content-flyers">
@@ -130,8 +130,8 @@
                 </div>
             </div>
 
-            <div class="sites project-item">
-                <h1 id="site">Sites</h1>
+            <div class="sites project-item todo-slider">
+                <h1 class="title-projects">Sites</h1>
                 <div class="slide-sites">
                     <div class="slider-sites">
                         <div class="content-sites">
@@ -147,8 +147,8 @@
                 </div>
             </div>
 
-            <div class="logos project-item">
-                <h1 id="logo">Logos</h1>
+            <div class="logos project-item todo-slider">
+                <h1 class="title-projects">Logos</h1>
                 <div class="slide-logos">
                     <div class="slider-logos">
                         <div class="content-logos">
@@ -168,8 +168,8 @@
                 </div>
             </div>
 
-            <div class="camisas project-item">
-                <h1 id="camisa">Camisas</h1>
+            <div class="camisas project-item todo-slider">
+                <h1 class="title-projects">Camisas</h1>
                 <div class="slide-camisas">
                     <div class="slider-camisas">
                         <div class="content-camisas">
@@ -194,20 +194,21 @@
 
         </section>
 
-        <section id="shirt">
-            <img src="./images/mark/Camisa.png" alt="Camisa CP Designers" class="shirt-image">
-            <img src="./images/Elements/splash.png" alt="Splash" class="shirt-splash">
+        <section class="show" id="shirt">
+            <img src="./images/mark/Camisa.png" alt="Camisa CP Designers" class="shirt-image todo-shirt">
+            <img src="./images/Elements/splash.png" alt="Splash" class="shirt-splash todo-splash">
         </section>
 
-        <section id="contact-section">
-            <h1>Entre em contato</h1>
-            <div class="form-container">
+        <section class="show" id="contact-section">
+            <h1 class="todo-title">Entre em contato</h1>
+            <div class="form-container todo-contact">
                 <div class="form-contact">
                     <form action="https://formspree.io/f/mjkrngdg" method="POST">
                         <input id="name" type="text" name="name" placeholder="Nome" required>
                         <input id="email" type="email" name="email" placeholder="Email" required>
                         <textarea id="message" name="message" placeholder="Mensagem" required></textarea>
-                        <input type="hidden" name="_redirect" value="https://cp-designers.github.io/Portifolio/obrigado">
+                        <input type="hidden" name="_redirect"
+                            value="https://cp-designers.github.io/Portifolio/obrigado">
                         <button type="submit">Enviar</button>
                     </form>
                 </div>

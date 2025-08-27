@@ -1,3 +1,8 @@
+:root{
+    --main-color: #6640EE;
+    --second-color: #6640ee97;
+    --white: #f8f8f8;
+}
 * {
     margin: 0;
     padding: 0;
@@ -10,6 +15,8 @@ html {
 }
 
 body {
+    background: var(--white);
+
     overflow-x: hidden;
     min-height: 100vh;
 }
@@ -24,7 +31,7 @@ header {
     top: 0;
     z-index: 1000;
 
-    background: #6640EE;
+    background: var(--main-color);
     filter: drop-shadow(0px 15px 12px rgba(0, 0, 0, 0.25));
 
 }
@@ -44,7 +51,7 @@ header ul {
 }
 
 header ul a {
-    background-image: linear-gradient(90deg, white, white);
+    background-image: linear-gradient(90deg, var(--white), var(--white));
     background-size: 0% 2px;
     background-repeat: no-repeat;
     background-position: center bottom;
@@ -52,7 +59,7 @@ header ul a {
     font-family: "Montserrat", sans-serif;
     font-weight: 300;
     font-size: 22px;
-    color: white;
+    color: var(--white);
     text-decoration: none;
 
     transition: background-size 300ms ease;
@@ -74,6 +81,15 @@ main {
     margin-top: 100px;
 }
 
+/* STYLE GOBLAL DOS TITULOS DAS SEÇÕES */
+main h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 54px;
+    font-weight: 300;
+    text-align: center;
+    color: var(--main-color);
+}
+
 /* START */
 #start-section {
 
@@ -84,7 +100,7 @@ main {
     font-family: "Montserrat", sans-serif;
     font-size: 100px;
     font-weight: 200;
-    color: #6640EE;
+    color: var(--main-color);
 
 }
 
@@ -123,14 +139,6 @@ main {
     margin-top: 230px;
 }
 
-#about-we #about {
-    font-family: "Montserrat", sans-serif;
-    font-size: 54px;
-    font-weight: 300;
-    text-align: center;
-    color: #6640EE;
-}
-
 #about-we #photos {
     display: flex;
     margin-top: 40px;
@@ -153,7 +161,7 @@ main {
     font-size: 32px;
     font-weight: 400;
     text-align: center;
-    color: #6640EE;
+    color: var(--main-color);
 }
 
 #about-we #photos .photo-pedro {
@@ -164,7 +172,7 @@ main {
     font-family: "Lato", sans-serif;
     font-size: 32px;
     text-align: center;
-    color: #6640EE;
+    color: var(--main-color);
 }
 
 #about-we #texts {
@@ -181,7 +189,7 @@ main {
 }
 
 #about-we #texts .who {
-    background: #6640EE;
+    background: var(--main-color);
     width: 505px;
     height: 180px;
     border-radius: 0px 50px 50px 80px;
@@ -189,12 +197,13 @@ main {
 
 
     text-align: center;
-    color: white;
+    color: var(--white);
 }
 
 #about-we #texts .who h1 {
     font-size: 48px;
     font-weight: 400;
+    color: var(--white);
 }
 
 #about-we #texts .who p {
@@ -206,19 +215,21 @@ main {
 }
 
 #about-we #texts .what {
-    background: #6640EE;
+    background: var(--main-color);
     width: 505px;
     height: 180px;
     border-radius: 50px 80px 0px 50px;
     padding: 15px;
 
     text-align: center;
-    color: white;
+    color: var(--white);
 }
 
 #about-we #texts .what h1 {
     font-size: 48px;
     font-weight: 400;
+    color: var(--white);
+
 }
 
 #about-we #texts .what p {
@@ -255,13 +266,13 @@ main {
 }
 
 .elements .plate {
-    top: 180px;
-    right: 31.3%;
+    top: 280px;
+    right: 23.5%;
     width: 180px;
 }
 
 .elements .plate img {
-    width: 600px;
+    width: 500px;
 }
 
 .elements .card {
@@ -298,12 +309,6 @@ main {
 #projects h1 {
     grid-column: 1 / span 2;
 
-    font-family: "Montserrat", sans-serif;
-    font-size: 64px;
-    font-weight: 300;
-    text-align: center;
-    color: #6640EE;
-
     margin-bottom: 55px;
 }
 
@@ -315,21 +320,22 @@ main {
     text-align: center;
 }
 
-/* FLYERS */
-#projects .flyers #art {
+/* STYLE TITULO DOS PROJETOS */
+#projects .title-projects {
     font-family: "Lato", sans-serif;
     font-weight: 300;
     font-size: 54px;
     margin-bottom: 15px;
 }
 
+/* FLYERS */
 #projects .slide-flyers {
     position: relative;
     display: flex;
     width: 430px;
     height: 550px;
 
-    border: 2px solid #6640EE;
+    border: 2px solid var(--main-color);
     border-radius: 50px;
 }
 
@@ -395,28 +401,21 @@ main {
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background-color: #6640ee97;
+    background-color: var(--second-color);
 }
 
 #projects .slide-flyers .dot-flyers.current {
-    background-color: #6640EE;
+    background-color: var(--main-color);
 }
 
 /* SITES */
-#projects .sites #site {
-    font-family: "Lato", sans-serif;
-    font-weight: 300;
-    font-size: 54px;
-    margin-bottom: 15px;
-}
-
 #projects .slide-sites {
     position: relative;
     display: flex;
     width: 430px;
     height: 550px;
 
-    border: 2px solid #6640EE;
+    border: 2px solid var(--main-color);
     border-radius: 50px;
 }
 
@@ -481,28 +480,21 @@ main {
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background-color: #6640ee97;
+    background-color: var(--second-color);
 }
 
 #projects .slide-sites .dot-sites.current {
-    background-color: #6640EE;
+    background-color: var(--main-color);
 }
 
 /* LOGOS */
-#projects .logos #logo {
-    font-family: "Lato", sans-serif;
-    font-weight: 300;
-    font-size: 54px;
-    margin-bottom: 15px;
-}
-
 #projects .logos .slide-logos {
     position: relative;
     display: flex;
     width: 450px;
     height: 450px;
 
-    border: 2px solid #6640EE;
+    border: 2px solid var(--main-color);
     border-radius: 50px;
 }
 
@@ -567,28 +559,21 @@ main {
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background-color: #6640ee97;
+    background-color: var(--second-color);
 }
 
 #projects .logos .dot-logos.current {
-    background-color: #6640EE;
+    background-color: var(--main-color);
 }
 
 /* CAMISAS */
-#projects .camisas #camisa {
-    font-family: "Lato", sans-serif;
-    font-weight: 300;
-    font-size: 54px;
-    margin-bottom: 15px;
-}
-
 #projects .camisas .slide-camisas {
     position: relative;
     display: flex;
     width: 520px;
     height: 550px;
 
-    border: 2px solid #6640EE;
+    border: 2px solid var(--main-color);
     border-radius: 50px;
 }
 
@@ -653,11 +638,11 @@ main {
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background-color: #6640ee97;
+    background-color: var(--second-color);
 }
 
 #projects .camisas .dot-camisas.current {
-    background-color: #6640EE;
+    background-color: var(--main-color);
 }
 
 
@@ -677,7 +662,7 @@ main {
 #shirt .shirt-image {
     margin: auto;
     width: 75%;
-    filter: drop-shadow(0px 0px 100px rgba(255, 255, 255));
+    filter: drop-shadow(0px 0px 100px var(--white));
     height: auto;
     z-index: 1;
 }
@@ -703,17 +688,13 @@ main {
     margin-bottom: 100px;
     padding: 25px 90px 50px 90px;
 
-    background: #6640EE;
+    background: var(--main-color);
     border-radius: 50px;
 }
 
 #contact-section h1 {
-    font-family: "Montserrat", sans-serif;
-    font-size: 54px;
-    font-weight: 300;
-    color: white;
-
     margin: auto;
+    color: var(--white);
 }
 
 #contact-section .form-container {
@@ -746,7 +727,7 @@ textarea {
 #contact-section .form-container input::placeholder,
 textarea::placeholder {
     font-weight: 300;
-    color: #6640EE;
+    color: var(--main-color);
 }
 
 #contact-section .form-container button {
@@ -755,8 +736,8 @@ textarea::placeholder {
     border-radius: 10px;
 
     background: none;
-    border: 2px solid white;
-    color: white;
+    border: 2px solid var(--white);
+    color: var(--white);
     font-family: "Montserrat", sans-serif;
     font-size: 24px;
     font-weight: 400;
@@ -769,8 +750,8 @@ textarea::placeholder {
 #contact-section .form-container button:hover {
     border-radius: 15px;
     border: none;
-    background: white;
-    color: #6640EE;
+    background: var(--white);
+    color: var(--main-color);
     font-size: 24px;
 
     cursor: pointer;
@@ -780,8 +761,8 @@ textarea::placeholder {
 
 /* FOOTER */
 footer {
-    background: #6640EE;
-    
+    background: var(--main-color);
+
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -815,7 +796,7 @@ footer p {
     font-family: "Inter", sans-serif;
     font-size: 20px;
     font-weight: 300;
-    color: white;
+    color: var(--white);
 }
 
 @media (max-width: 786px) {
@@ -836,7 +817,7 @@ footer p {
         display: none;
     }
 
-    main{
+    main {
         width: 100%;
     }
 
@@ -1004,11 +985,12 @@ footer p {
         margin-bottom: 0px;
     }
 
-    /* FLYERS */
-    #projects .flyers #art {
+    /* STYLE TITULO DOS PROJETOS */
+    #projects .title-projects {
         font-size: 30px;
     }
 
+    /* FLYERS */
     #projects .slide-flyers {
         width: 330px;
         height: 450px;
@@ -1039,10 +1021,6 @@ footer p {
     }
 
     /* SITES */
-    #projects .sites #site {
-        font-size: 30px;
-    }
-
     #projects .slide-sites {
         width: 330px;
         height: 380px;
@@ -1078,10 +1056,6 @@ footer p {
     }
 
     /* LOGOS */
-    #projects .logos #logo {
-        font-size: 30px;
-    }
-
     #projects .logos .slide-logos {
         width: 350px;
         height: 350px;
@@ -1112,10 +1086,6 @@ footer p {
     }
 
     /* CAMISAS */
-    #projects .camisas #camisa {
-        font-size: 34px;
-    }
-
     #projects .camisas .slide-camisas {
         width: 380px;
         height: 410px;
@@ -1220,4 +1190,112 @@ footer p {
 
         font-size: 20px;
     }
+}
+
+/*-----------ANIMAÇÃO-----------*/
+
+/* TITULOS */
+.todo-title {
+    opacity: 0;
+    transition: 1.8s ease;
+}
+
+.todo-title.show {
+    opacity: 1;
+}
+
+/* ABOUT WE */
+.todo-charllys {
+    translate: -50%;
+    opacity: 0;
+    transition: 1.5s ease;
+}
+
+.todo-charllys.show {
+    opacity: 1;
+    translate: 0;
+}
+
+.todo-pedro {
+    translate: 50%;
+    opacity: 0;
+    transition: 1.5s ease;
+}
+
+.todo-pedro.show {
+    opacity: 1;
+    translate: 0;
+}
+
+/* ELEMENTS */
+.line {
+    opacity: 0;
+    transition: 2.5s ease;
+}
+
+.line.show {
+    opacity: 1;
+}
+
+.plate {
+    scale: 0;
+    opacity: 0;
+    transition: 1.5s ease;
+}
+
+.plate.show {
+    scale: 1;
+    opacity: 1;
+}
+
+.card {
+    scale: 0;
+    opacity: 0;
+    transition: 1.5s ease;
+}
+
+.card.show {
+    scale: 1;
+    opacity: 1;
+}
+
+/* PROJECTS */
+.todo-slider {
+    opacity: 0;
+    transition: 1.5s ease;
+}
+
+.todo-slider.show {
+    opacity: 1;
+}
+
+/* SHIRT */
+.todo-shirt {
+    scale: 0;
+    opacity: 0;
+    transition: 3s ease;
+}
+
+.todo-shirt.show {
+    scale: 1;
+    opacity: 1;
+}
+
+.todo-splash {
+    opacity: 0;
+    transition: 1.5s ease;
+}
+
+.todo-splash.show {
+    opacity: 1;
+}
+
+/* CONTACT */
+.todo-contact {
+    opacity: 0;
+    transition: 1.5s ease;
+}
+
+.todo-contact.show {
+    opacity: 1;
 }

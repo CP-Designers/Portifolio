@@ -65,7 +65,6 @@ function initCarousel({ sliderClass, contentClass, dotClass, dotsContainerClass,
   setCurrentDot();
 }
 
-
 window.addEventListener('DOMContentLoaded', () => {
 
   // Inicializa o carrossel para Flyers
@@ -109,4 +108,37 @@ window.addEventListener('DOMContentLoaded', () => {
   });
 
 });
+
+
+const observer = new IntersectionObserver((entries)=>{
+  entries.forEach((entry)=>{
+    if(entry.isIntersecting){
+      entry.target.classList.add("show")
+    }else{
+      entry.target.classList.remove("show")
+    }
+  })
+},{})
+
+const todoElementsTitle = document.querySelectorAll(".todo-title")
+const todoElementsPedro = document.querySelectorAll(".todo-pedro")
+const todoElementsCharllys = document.querySelectorAll(".todo-charllys")
+const todoElements = document.querySelectorAll(".todo")
+const todoElementsSlider = document.querySelectorAll(".todo-slider")
+const todoElementsShirt = document.querySelectorAll(".todo-shirt")
+const todoElementsSplash = document.querySelectorAll(".todo-splash")
+const todoElementsContact = document.querySelectorAll(".todo-contact")
+
+
+todoElementsTitle.forEach(el => observer.observe(el))
+todoElementsPedro.forEach(el => observer.observe(el))
+todoElementsCharllys.forEach(el => observer.observe(el))
+todoElements.forEach(el => observer.observe(el))
+todoElementsSlider.forEach(el => observer.observe(el))
+todoElementsShirt.forEach(el => observer.observe(el))
+todoElementsSplash.forEach(el => observer.observe(el))
+todoElementsContact.forEach(el => observer.observe(el))
+
+
+
 
