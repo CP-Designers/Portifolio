@@ -945,13 +945,13 @@ footer p {
     }
 
     .elements .plate {
-        top: 50px;
-        right: 5%;
+        top: 85px;
+        right: 3%;
         width: 180px;
     }
 
     .elements .plate img {
-        width: 200px;
+        width: 100%;
     }
 
     .elements .card {
